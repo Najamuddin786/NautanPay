@@ -1,6 +1,6 @@
 // api.js or config.js (whichever file handles API URLs)
 
-const BASE_URL = process.env.NODE_ENV === 'development'
+const BASE_URL = import.meta.env.MODE === 'development'
   ? 'http://localhost:3000'
   : 'https://nautanpay.onrender.com';
 
