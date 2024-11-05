@@ -4,10 +4,10 @@ import {
 } from "@chakra-ui/react";
 import { useState, useEffect } from "react";
 import imageNautanPay from '../assets/NautanPay.png';
-import Up from "../Components/Login/Up";
-import SignupForm from "../Components/Login/SignupForm";
+import Up from "../Components/ForgetPassword/Up";
+import SignupForm from "../Components/ForgetPassword/SignupForm";
 
-export default function Login() {
+export default function ForgetPassword() {
     return (
         <Box h="100vh" bg="#0be881">
             <Box p="20px" h="25vh" bg="#0be881">
