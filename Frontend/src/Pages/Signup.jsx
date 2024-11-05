@@ -4,8 +4,8 @@ import {
 } from "@chakra-ui/react";
 import { useState, useEffect } from "react";
 import imageNautanPay from '../assets/NautanPay.png';
-import Up from "../Components/Login/Up";
-import SignupForm from "../Components/Login/SignupForm";
+import Up from "../Components/Signup/Up";
+import SignupForm from "../Components/Signup/SignupForm";
 
 export default function Signup() {
     return (
