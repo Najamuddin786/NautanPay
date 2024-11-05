@@ -12,19 +12,19 @@ signupRouter.post('/signup', async (req, res) => {
         // Step 1: Check if the user already exists
         const existingUser = await UserSignupModel.findOne({ number });
         if (existingUser) {
-            return res.status(409).send("User already exists");
+            return res.status(200).send("User already exists");
         }
 
         // Step 2: Verify the OTP
         const otpRecord = await OtpModel.findOne({ number, code: otpCode });
         if (!otpRecord) {
-            return res.status(400).send("Invalid OTP or number");
+            return res.status(202).send("Invalid OTP or number");
         }
 
         // Check if the OTP has expired
         const currentTime = moment().tz("Asia/Kolkata").format('YYYY-MM-DD HH:mm:ss');
         if (currentTime > otpRecord.expiresAt) {
-            return res.status(400).send("OTP has expired");
+            return res.status(202).send("OTP has expired");
         }
 
         // Delete the OTP after verification
@@ -39,7 +39,7 @@ signupRouter.post('/signup', async (req, res) => {
         });
 
         await newUser.save();
-        res.status(201).send("User created successfully");
+        res.status(200).send("User created successfully");
     } catch (error) {
         console.error(error);
         res.status(500).send("An error occurred while creating the user");

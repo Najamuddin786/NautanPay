@@ -15,7 +15,7 @@ otpRouter.post('/send-otp', async (req, res) => {
     try {
         const existingUser = await UserSignupModel.findOne({ number });
         if (existingUser) {
-            return res.status(409).send("User already present"); // 409 for Conflict
+            return res.status(202).send("User already present"); // 409 for Conflict
         }
     } catch (error) {
         console.error("Error checking user existence:", error);
