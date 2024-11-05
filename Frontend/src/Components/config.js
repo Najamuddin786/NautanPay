@@ -1,8 +1,9 @@
 // api.js or config.js (whichever file handles API URLs)
 
-const BASE_URL = process.env.NODE_ENV === 'development'
-  ? 'http://localhost:3000'
-  : 'https://nautanpay.onrender.com';
+// const BASE_URL = process.env.NODE_ENV === 'development'
+//   ? 'http://localhost:3000'
+//   : 'https://nautanpay.onrender.com';
+const BASE_URL ='https://nautanpay.onrender.com';
 
 export default BASE_URL;
 
