@@ -6,6 +6,9 @@ const PORT = process.env.PORT || 3000;
 //--------- Router
 import singupRouter from './src/routes/signupRoutes.js';
 import otpRouter from './src/routes/otpRouter.js';
+import loginRouter from './src/routes/loginRouter.js';
+import resendotpRouter from './src/routes/resendotpRouter.js';
+import forgotPasswordRouter from './src/routes/forgetpasswordRouter.js';
 
 
 // --------Medile were
@@ -16,6 +19,9 @@ app.use(express.json());
 // Define a simple route
 app.use('/loanRim',singupRouter)
 app.use('/loanRim',otpRouter)
+app.use('/loanRim',loginRouter)
+app.use('/loanRim',resendotpRouter)
+app.use('/loanRim',forgotPasswordRouter)
 
 
 
