@@ -1,0 +1,9 @@
+/* body{color: rgb(242, 245, 251);} */
+#myElement {
+    transition: transform 0.3s ease; /* Smooth transition */
+  }
+  
+#myElement:hover {
+    transform: scale(1.05); /* Scale 1.5x on hover */
+  }
+  
