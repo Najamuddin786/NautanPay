@@ -10,13 +10,13 @@ export default function Navbar(){
     let [active,setActive]=useState('home')
 
     return <>
-            <Flex borderBottom={'2px solid white'}  m='-10px' alignItems={'center'}   h='10vh' w='100vw' bg='black' position={'sticky'} top='0px' bottom={'0px'}>
+            <Flex borderBottom={'2px solid white'}  m='-10px' alignItems={'center'}   h='7vh' w='100vw' bg='black' position={'sticky'} top='0px' bottom={'0px'}>
                <Flex p='8px' gap={1} alignItems={'center'} color={'white'} w='100vw'>
                 
                 <Text fontWeight={600} fontSize={'30px'}>NivaPay</Text>
                 <Spacer/>
                 <Text>{"Md Najamuddin"}</Text>
-                <Box border={'2px solid red'} borderRadius={'50px'} bg='blue' p='5px' fontSize={'25px'}><FaRegUserCircle /></Box>
+                <Box border={'1px solid red'} borderRadius={'50px'} bg='blue' p='5px' fontSize={'25px'}><FaRegUserCircle /></Box>
                 
                 </Flex>     
                    
