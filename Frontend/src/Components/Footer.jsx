@@ -17,7 +17,7 @@ export default function Footer(){
                     </Flex>
                     </Link>
                     <Link>
-                    <Flex color={'white'} p='10px'  mb='40px' fontWeight={'600'}  borderRadius={'100px'} h='85px' w='85px' border={'5px solid white'} bg='blue' flexDir={'column'} alignItems={'center'}>
+                    <Flex onClick={()=>{setActive('recharge')}} color={'white'} p='10px'  mb='40px' fontWeight={'600'}  borderRadius={'100px'} h='85px' w='85px' border={'5px solid white'} bg='blue' flexDir={'column'} alignItems={'center'}>
                         <Box  fontSize={'22px'}><FaMobile /></Box>
                         <Text>Recharge</Text>
                     </Flex>
