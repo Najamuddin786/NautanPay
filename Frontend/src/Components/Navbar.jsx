@@ -10,7 +10,7 @@ export default function Navbar(){
     let [active,setActive]=useState('home')
 
     return <>
-            <Flex borderBottom={'2px solid white'}  m='-10px' alignItems={'center'}   h='7vh' w='100vw' bg='black' position={'sticky'} top='0px' bottom={'0px'}>
+            <Flex borderBottom={'2px solid white'}  m='-10px' alignItems={'center'}   h='8vh' w='100vw' bg='black' position={'sticky'} top='0px' bottom={'0px'}>
                <Flex p='8px' gap={1} alignItems={'center'} color={'white'} w='100vw'>
                 
                 <Text fontWeight={600} fontSize={'30px'}>NivaPay</Text>
