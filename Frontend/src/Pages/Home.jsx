@@ -3,6 +3,7 @@ import { FiSmartphone, FiClock } from "react-icons/fi";
 import ImageSlider from "../Components/Home/ImageSlider";
 import '../App.css'
 import Footer from "../Components/Footer";
+import Navbar from "../Components/Navbar";
 
 function Service() {
     return (
@@ -28,6 +29,7 @@ function Service() {
 export default function Home() {
     return (
         <Flex gap={'5'} p='10px' bg="#0be881" height={'100vh'} flexDir={'column'}>
+            <Navbar/>
             <ImageSlider/>
             <Service />
             <Footer/>
