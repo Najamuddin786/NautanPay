@@ -16,7 +16,7 @@ export default function Navbar(){
                 <Text fontWeight={600} fontSize={'30px'}>NivaPay</Text>
                 <Spacer/>
                 <Text>{"Md Najamuddin"}</Text>
-                <Box border={'1px solid red'} borderRadius={'50px'} bg='blue' p='5px' fontSize={'25px'}><FaRegUserCircle /></Box>
+                <Link to='/profile'><Box border={'1px solid red'} borderRadius={'50px'} bg='blue' p='5px' fontSize={'25px'}><FaRegUserCircle /></Box></Link>
                 
                 </Flex>     
                    
