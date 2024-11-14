@@ -2,6 +2,7 @@ import { Box, Flex, Icon,Text } from "@chakra-ui/react";
 import { FiSmartphone, FiClock } from "react-icons/fi";
 import ImageSlider from "../Components/Home/ImageSlider";
 import '../App.css'
+import Footer from "../Components/Footer";
 
 function Service() {
     return (
@@ -29,6 +30,7 @@ export default function Home() {
         <Flex gap={'5'} p='10px' bg="#0be881" height={'100vh'} flexDir={'column'}>
             <ImageSlider/>
             <Service />
+            <Footer/>
         </Flex>
     );
 }
