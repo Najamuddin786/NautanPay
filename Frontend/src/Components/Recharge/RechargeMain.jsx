@@ -6,6 +6,7 @@ import vi from './Vi.png';
 import jio from './jio.png';
 import airtel from './airtel.png';
 import bsnl from './bsnl.png';
+import PayNow from "./PayNow";
 
 const operators = [
     { label: "Reliance Jio", icon: jio },
@@ -63,6 +64,7 @@ function RechargeNumber({ onSubmit }) {
                     </>
                 )}
             </Box>
+            
         </Flex>
     );
 }
@@ -71,7 +73,7 @@ function SearchResult({ data, onChange }) {
     const operatorLogo = operators.find(op => op.label === data.operator)?.icon;
 
     return (
-        <Flex pb='18px' direction="column" align="center" justify="center" bg="white" boxShadow={'2xl'} border={'1px solid gray'}>
+        <><Flex pb='18px' direction="column" align="center" justify="center" bg="white" boxShadow={'2xl'} border={'1px solid gray'}>
             <Text fontSize="24px">Recharge Details</Text>
             <Text mt="5px">Phone Number: {data.phoneNumber}</Text>
             
@@ -86,7 +88,15 @@ function SearchResult({ data, onChange }) {
                     <Text px="10px" borderRadius="2px" bg="white" color="blue" onClick={onChange}>Change</Text>
                 </Flex>
             </Flex>
+
+            <Box mt='20px' w='90%'>
+            <Input type="number" placeholder="Enter Amount"/>
+            </Box>
+        
+            
         </Flex>
+        <PayNow/>
+        </>
     );
 }
 
